@@ -1,0 +1,20 @@
+{
+  "name": "math-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.ts"
+  },
+  "keywords": [],
+  "author": "Yasindu Samarasinge",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google/generative-ai": "^0.11.1",
+    "@types/node": "^20.12.11",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2"
+  }
+}
