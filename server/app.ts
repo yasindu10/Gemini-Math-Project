@@ -6,6 +6,8 @@ const app: Express = express()
 
 import { getResult } from './controllers/ai-controller'
 
+app.use(express.json())
+
 app.get('/api/v1/ai/', getResult)
 
 const port = process.env.PORT || 8080
