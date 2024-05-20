@@ -1,6 +1,8 @@
 import { Request, Response } from 'express'
 
 import { getAiData } from '../utils/gemini-integration'
+import { memoryStorage } from 'multer'
+
 
 const getResult = async (req: Request, res: Response): Promise<void> => {
     const url = req.body.url
