@@ -7,7 +7,7 @@
     "watch": "tsc -w",
     "dev": "nodemon dist/app.ts",
     "build":"tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/app.js"
   },
   "keywords": [],
   "author": "Yasindu Samarasinge",
