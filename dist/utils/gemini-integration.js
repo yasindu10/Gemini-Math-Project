@@ -19,7 +19,7 @@ const getAiData = (buffers) => __awaiter(void 0, void 0, void 0, function* () {
     const image = {
         inlineData: {
             data: buffers.toString('base64'),
-            mimeType: "image/png",
+            mimeType: "image/jpg",
         },
     };
     const result = yield model.generateContent([prompt, image]);

@@ -13,6 +13,7 @@ exports.getResult = void 0;
 const gemini_integration_1 = require("../utils/gemini-integration");
 const getResult = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     var _a;
+    console.log(req.file, req.body);
     const buffers = (_a = req.file) === null || _a === void 0 ? void 0 : _a.buffer; // get buffers from file
     if (!buffers)
         return;
