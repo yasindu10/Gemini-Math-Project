@@ -12,7 +12,7 @@ const getAiData = async (buffers: Buffer): Promise<string> => {
     const image = {
         inlineData: {
             data: buffers.toString('base64'),
-            mimeType: "image/png",
+            mimeType: "image/jpg",
         },
     };
 
