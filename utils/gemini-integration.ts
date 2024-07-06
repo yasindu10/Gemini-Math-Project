@@ -7,7 +7,7 @@ const genAI = new GoogleGenerativeAI(API_KEY ? API_KEY : '');
 
 const getAiData = async (buffers: Buffer): Promise<string> => {
     const model = genAI.getGenerativeModel({ model: "gemini-pro-vision" });
-    const prompt = "solve this math problem and show the answers and steps. is this image not a math question answer this is not a math question";
+    const prompt = "solve this math problem or check the answer for correctness and provide the solution step-by-step";
 
     const image = {
         inlineData: {
