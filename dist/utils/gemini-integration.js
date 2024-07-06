@@ -15,7 +15,7 @@ const API_KEY = process.env.API_KEY;
 const genAI = new generative_ai_1.GoogleGenerativeAI(API_KEY ? API_KEY : '');
 const getAiData = (buffers) => __awaiter(void 0, void 0, void 0, function* () {
     const model = genAI.getGenerativeModel({ model: "gemini-pro-vision" });
-    const prompt = "solve this math problem or check the answer for correctness and provide the solution step-by-step";
+    const prompt = "First, solve this math problem.is it solved check the answer for correctness and provide the solution step-by-step";
     const image = {
         inlineData: {
             data: buffers.toString('base64'),
